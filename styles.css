@@ -45,9 +45,10 @@ body {
     font-size: 20px;
 }
 
-.top {
-    /* space-bwe; */
-}
+/* .top {
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
 
 #pic {
     border-radius: 50%;
@@ -57,6 +58,127 @@ body {
     height: 150px;
 }
 
+body {
+    background-color: #f7feff;
+}
+
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .experience-dates {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .experience-details {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .experience-images {
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .experience-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5%;
+  }
+  
+  .custom-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .custom-link:visited {
+    color: black;
+  }
+  
+  .custom-link:hover {
+    color: blue;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-item {
+    width: calc(50% - 50px);
+    aspect-ratio: 7 / 5;
+    background-color: #f2fbf7;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .pub-item {
+    width: auto;
+    aspect-ratio: 7 / 5;
+    background-color: #f3f6fc;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .project-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .project-content h3 {
+    margin: 0;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
 
 @media (min-width: 960px) {
     body {
@@ -68,4 +190,7 @@ body {
     body {
         margin: 0% 5% 0% 5%;
     }
+    .project-item {
+        width: 100%;
+      }
 }
