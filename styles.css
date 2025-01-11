@@ -59,7 +59,8 @@ body {
 }
 
 body {
-    background-color: #f7feff;
+    background-color: #fffcf7;
+    
 }
 
 
@@ -72,7 +73,7 @@ body {
   .experience-item {
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: #fff8f8;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
